@@ -31,7 +31,6 @@ notebooks/
 dashboard/
   spacex_dash_app.py
 data/
-images/
 presentation/
 requirements.txt
 ```
