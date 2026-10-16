@@ -1,0 +1,198 @@
+{
+  "split": "stratified_random_80_20",
+  "seed": 42,
+  "cv_folds": 5,
+  "selection_metric": "cv_balanced_accuracy",
+  "features": [
+    "FlightNumber",
+    "Flights",
+    "Block",
+    "Orbit",
+    "LaunchSite",
+    "GridFins",
+    "Reused",
+    "Legs"
+  ],
+  "selected_model": "SVM",
+  "cv_comparison": [
+    {
+      "model": "SVM",
+      "cv_balanced_accuracy": 0.835,
+      "cv_std": 0.099498743710662,
+      "parameters": {
+        "model__C": 1,
+        "model__kernel": "rbf"
+      }
+    },
+    {
+      "model": "KNN",
+      "cv_balanced_accuracy": 0.8338888888888889,
+      "cv_std": 0.0968070500442587,
+      "parameters": {
+        "model__n_neighbors": 3,
+        "model__weights": "distance"
+      }
+    },
+    {
+      "model": "Decision tree",
+      "cv_balanced_accuracy": 0.8238888888888889,
+      "cv_std": 0.08030804888707846,
+      "parameters": {
+        "model__max_depth": 2,
+        "model__min_samples_leaf": 1
+      }
+    },
+    {
+      "model": "Logistic regression",
+      "cv_balanced_accuracy": 0.8049999999999999,
+      "cv_std": 0.09539392014169452,
+      "parameters": {
+        "model__C": 1
+      }
+    }
+  ],
+  "train_n": 72,
+  "test_n": 18,
+  "train_flights": [
+    67,
+    37,
+    38,
+    86,
+    48,
+    41,
+    25,
+    55,
+    12,
+    8,
+    56,
+    3,
+    80,
+    66,
+    51,
+    4,
+    27,
+    31,
+    59,
+    54,
+    61,
+    6,
+    1,
+    83,
+    17,
+    53,
+    26,
+    44,
+    84,
+    7,
+    62,
+    79,
+    52,
+    18,
+    24,
+    32,
+    87,
+    49,
+    68,
+    72,
+    85,
+    89,
+    35,
+    74,
+    57,
+    28,
+    70,
+    78,
+    75,
+    42,
+    65,
+    88,
+    43,
+    11,
+    20,
+    36,
+    90,
+    39,
+    2,
+    21,
+    5,
+    77,
+    60,
+    64,
+    73,
+    16,
+    45,
+    29,
+    15,
+    30,
+    58,
+    23
+  ],
+  "test_flights": [
+    33,
+    46,
+    10,
+    14,
+    22,
+    34,
+    47,
+    69,
+    81,
+    63,
+    40,
+    13,
+    82,
+    76,
+    19,
+    50,
+    71,
+    9
+  ],
+  "train_class_counts": {
+    "1": 48,
+    "0": 24
+  },
+  "test_class_counts": {
+    "1": 12,
+    "0": 6
+  },
+  "selected_test": {
+    "accuracy": 0.7777777777777778,
+    "balanced_accuracy": 0.6666666666666666,
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571428571428571,
+    "confusion_matrix": [
+      [
+        2,
+        4
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  },
+  "baseline_test": {
+    "accuracy": 0.6666666666666666,
+    "balanced_accuracy": 0.5,
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1": 0.8,
+    "confusion_matrix": [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

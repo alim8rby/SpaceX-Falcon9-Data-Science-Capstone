@@ -1,5 +1,5 @@
-# Presentation
+# Original course presentation
 
-Final presentation: **Winning Space Race with Data Science**.
+The original `Data Science Capstone Project Report.pdf` is preserved as historical IBM course work. Its reported metrics and workflow descriptions are not independently reproduced simply by retaining this file.
 
-The deck should summarize the methodology, EDA findings, SQL analysis, Folium launch-site maps, Plotly Dash dashboard, classification model comparison, confusion matrix, and conclusions.
+For the October 2026 executed repository results and limitations, use `../results/SUMMARY.md` and the saved notebook outputs. The new model feature set, preprocessing, seed and validation protocol differ from the original report, so metric differences are expected. Live API/scraping collection was not validated during this upgrade.
